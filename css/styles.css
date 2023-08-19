@@ -28,9 +28,7 @@
   opacity: .6;
   z-index: 9999;
 
-}
-
-html, body {
+}html, body {
   overflow-x: hidden;
 }
 body {
