@@ -62,9 +62,9 @@ body {
 }
 
 .bottomRight {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
   font-size: 18px;
 }
 html, body {
