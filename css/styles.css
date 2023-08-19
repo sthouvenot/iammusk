@@ -30,6 +30,13 @@
 
 }
 
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
+
 .netWorth {
     margin-top: -50px;
     margin-bottom: 15px;
