@@ -49,6 +49,11 @@ background-image: linear-gradient(110deg, #00b712 0%, #5aff15 74%);
     height:100vh;
 
 
+  overflow-x: hidden;
+
+
+  position: relative;
+
 }
 
 .circles{
