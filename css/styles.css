@@ -86,7 +86,7 @@ body {
 }
 
 
-@media only screen and (max-width: 499px) {
+@media only screen and (max-width: 768px) {
   .holder .wrapper  {
     font-size: 190px;
   }
