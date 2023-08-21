@@ -5,6 +5,7 @@
   font-weight: 700;
   font-family: "Playfair Display", serif;
   text-decoration: none;
+  letter-spacing: 0px;
 }
 .holder .typo option, .holder .list a option {
   font-size: 30px;
