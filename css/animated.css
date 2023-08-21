@@ -28,18 +28,36 @@ text-shadow: 1px 5px 8px #02020291, 5px 4px 8px #0000;
 
 }
 
+@media only screen and (max-width: 768px) {
+  .context h1 {
+  font-size: 35px;
+}
+}
+
 .moneyclass {
     padding: 20px 40px 20px;
 
     border-radius: 25px;
+    display: inline; font-size: 100px;
 }
 
+@media only screen and (max-width: 768px) {
+ .moneyclass  {
+  font-size: 34px;
+  padding: 0px;
+}
+}
 
 .ifstate {
     margin-top: 15px;
     font-size: .27em;
 }
 
+@media only screen and (max-width: 768px) {
+  .ifstate {
+  font-size: .3em;
+}
+}
 
 .area{
 background-color: #00b712;
