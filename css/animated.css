@@ -43,6 +43,19 @@ body{
 
 }
 
+
+.selector
+{
+    margin-top: 60px;
+}
+
+
+@media only screen and (max-width: 768px) {
+ .selector  {
+   margin-top: 27px;
+}
+}
+
 .bottomlefter
 {
     color: black; float: left; font-size: 18px 
@@ -56,7 +69,7 @@ body{
 
 @media only screen and (max-width: 768px) {
  .moneyclass  {
-  font-size: 10vw;
+  font-size: 14vw;
   padding: 0px;
 }
 }
