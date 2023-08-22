@@ -28,6 +28,7 @@
   font-size: 18px;
   opacity: .6;
   z-index: 9999;
+  position: absolute;width: 30px;
 }
 @media only screen and (max-width: 768px) {
 .topRight {
@@ -37,6 +38,7 @@
     font-size: 5px;
     opacity: .6;
     z-index: 9999;
+    position: absolute;width: 20px;
 }
 }
 }html, body {
