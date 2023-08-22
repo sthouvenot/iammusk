@@ -136,8 +136,8 @@ body {
 @media only screen and (max-width: 768px) {
 .holder .list ul {
 transform: scale(.7);
-    margin-left: -25vw;
-    margin-top: -8.2vh;
+    margin-left: -15vw;
+    margin-top: -5.2vh
 }
 }
 
