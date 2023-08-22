@@ -132,6 +132,16 @@ body {
   left: 0;
   display: none;
 }
+
+@media only screen and (max-width: 768px) {
+.holder .list ul {
+transform: scale(.5);
+    margin-left: -25vw;
+    margin-top: -8.2vh;
+}
+}
+
+
 .holder .list ul .active {
   display: block;
 }
