@@ -40,7 +40,7 @@ var x = setInterval(function() {
   for (var i = 0; i < newAmount.length; i++) {
     var charSpan = document.createElement("span");
     charSpan.textContent = newAmount[i];
-    charSpan.style.width = ".95ch"; // Set the fixed width for each digit using 'ch' unit
+    charSpan.style.width = ".91ch"; // Set the fixed width for each digit using 'ch' unit
     charSpan.style.display = "inline-block"; // Ensure consistent layout
     charSpan.style.textAlign = "center"; // Center align the content
 
