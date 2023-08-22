@@ -75,19 +75,19 @@ body {
 }
 
 .bottomRight {
-position: fixed;
-    bottom: 4px;
-    right: 2px;
+    position: fixed;
+    bottom: 0px;
+    right: -10px;
     font-size: 18px;
     -webkit-backface-visibility: hidden;
-    transform: scale(0.82);
+    transform: scale(0.72);
 }
 
 @media only screen and (max-width: 768px) {
   .bottomRight  {
    transform: scale(0.54);
     bottom: -5p;
-    bottom: -3px;
+    bottom: 0px;
     right: -30px;
   }
 }
