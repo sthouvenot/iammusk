@@ -45,7 +45,7 @@ body{
 
 .bottomlefter
 {
-    color: black; float: left; font-size: 20px 
+    color: black; float: left; font-size: 18px 
 }
 
 @media only screen and (max-width: 768px) {
@@ -64,7 +64,7 @@ body{
 .ifstate {
     margin-top: 15px;
     font-size: .27em;
-    text-shadow: -1px 0px 5px #00000066
+    text-shadow: 1px 1px 5px #00000091;
 }
 
 @media only screen and (max-width: 768px) {
@@ -87,6 +87,8 @@ background-image: linear-gradient(110deg, #00b712 0%, #5aff15 74%);
 
   position: relative;
 
+    background: radial-gradient(#3ace54, #094204);
+    background: radial-gradient(#00fd2c, #68f45c);
 }
 
 .circles{
