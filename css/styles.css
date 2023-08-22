@@ -26,7 +26,7 @@
   top: 25px;
   right: 18px;
   font-size: 18px;
-  opacity: .6;
+  opacity: .85;
   z-index: 9999;
 }
 @media only screen and (max-width: 768px) {
@@ -35,7 +35,7 @@
     top: 15px;
     right: 10px;
     font-size: 5px;
-    opacity: .6;
+    opacity: .85;
     z-index: 9999;
 }
 }
@@ -47,12 +47,14 @@ body {
 }
 
 .netWorth {
-    margin-top: -50px;
+    margin-top: -60px;
     margin-bottom: 15px;
     /* margin-left: -280px; */
     font-family: inherit;
     /* letter-spacing: 3px; */
     font-size: .7em;
+    text-shadow: 1px 2px 8px #388b42
+
 }
 
 .topRight:focus{
@@ -79,6 +81,18 @@ body {
   font-size: 18px;
 -webkit-backface-visibility: hidden;
 }
+
+@media only screen and (max-width: 768px) {
+  .bottomRight  {
+   transform: scale(0.54);
+    bottom: -5p;
+    bottom: -7px;
+    right: -30px;
+  }
+}
+
+
+
 html, body {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -121,10 +135,9 @@ body {
 .holder .list li {
   list-style: none;
       list-style: none;
-    width: 460px;
-    background-color: #393939;
     padding-left: 10px;
     margin-left: -10px;
+    padding: 4px;
 }
 
 .holder .list a {
@@ -132,7 +145,11 @@ body {
   transition: all 0.4s;
   color: #7b00ff;
   position: relative;
-  color: #efec75;
+  color: #ffff7e;
+      background: #6e6e6e94;
+    padding: 0px 10px 2px 8px;
+    border-radius: 8px;
+
 }
 .holder .list a:after {
   position: absolute;
@@ -180,7 +197,7 @@ body {
 .holder .placeholder {
   border-bottom: 4px solid;
   cursor: pointer;
- color: black;
+  color: #ffff7e;
 }
 
 @media only screen and (max-width: 768px) {
