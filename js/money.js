@@ -16,6 +16,14 @@ var x = setInterval(function() {
   var newSeconds = new Date().getTime();
   var difference = (newSeconds - begSeconds) / 1000;
   newAmount = difference * increaseNumber;
+  amountLarge = false;
+
+  if (/Android|webOS|iPhone|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent)) {
+    if(newAmount > 9999999)
+  {
+    amountLarge = true;
+  }
+}
   newAmount = newAmount.toFixed(2);
   newAmount = numberWithCommas(newAmount);
 
@@ -36,6 +44,11 @@ var x = setInterval(function() {
   dollarSpan.style.textShadow = "-7px 3px 20px #00ff30cf, -4px 3px 1px #20ff00;";
   moneyElement.appendChild(dollarSpan);
 
+  if(amountLarge)
+  {
+    dollarSpan.style.fontSize = ".4em";
+  }
+
   // Create spans for each digit and comma
   for (var i = 0; i < newAmount.length; i++) {
     var charSpan = document.createElement("span");
@@ -43,15 +56,26 @@ var x = setInterval(function() {
     charSpan.style.width = ".91ch"; // Set the fixed width for each digit using 'ch' unit
     charSpan.style.display = "inline-block"; // Ensure consistent layout
     charSpan.style.textAlign = "center"; // Center align the content
+    
+    if(amountLarge)
+    {
+      charSpan.style.fontSize = ".8em"; 
+    }
 
     if (newAmount[i] === "," || newAmount[i] === ".") {
-      charSpan.style.fontSize = ".8em"; // Adjust the font size for commas and decimal point
+         charSpan.style.fontSize = ".8em"; // Adjust the font size for commas and decimal point
          charSpan.style.width = ".5ch"; 
+
+      
     }
 
     if(i > newAmount.length - 4)
     {
       charSpan.style.fontSize = ".785em";
+        if(amountLarge)
+         {
+            charSpan.style.fontSize = ".3em"; 
+         }
     }
 
     moneyElement.appendChild(charSpan);
