@@ -1,12 +1,12 @@
 speed = 10;
 
-bezosIncrease = 2447.68;
-gatesIncrease = 254.06;
-muskIncrease = 1978.44;
-zuckIncrease = 668.99;
-toppointIncrease = 0.0890331008;
-toponeIncrease = 0.02338925174;
-avgAmericanIncrease = 0.00175688015;
+bezosIncrease = 1636.01;
+gatesIncrease = 538.99;
+muskIncrease = 2511.09;
+zuckIncrease = 1896.00;
+toppointIncrease = 0.10185434369 ;
+toponeIncrease = 0.02611804058;
+avgAmericanIncrease = 0.00192057704;
 avgMinimumWage = 0.00047812301;
 
 var begSeconds = new Date().getTime();
@@ -17,6 +17,7 @@ var x = setInterval(function() {
   var difference = (newSeconds - begSeconds) / 1000;
   newAmount = difference * increaseNumber;
   amountLarge = false;
+
 
   if (/Android|webOS|iPhone|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent)) {
     if(newAmount > 9999999)
@@ -85,7 +86,7 @@ var x = setInterval(function() {
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
-var increaseNumber = bezosIncrease;
+var increaseNumber = muskIncrease;
 
 function reseter() {
   begSeconds = new Date().getTime();
