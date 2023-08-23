@@ -80,6 +80,7 @@ body {
   .bottomleft  {
     transform: scale(.8);
     margin-left: -10px;
+    bottom: 0px;
   }
 }
 
@@ -87,17 +88,17 @@ body {
 .bottomRight {
     position: fixed;
     bottom: 0px;
-    right: -10px;
+    right: -25px;
     font-size: 18px;
     -webkit-backface-visibility: hidden;
-    transform: scale(0.72);
+    transform: scale(0.59);
 }
 
 @media only screen and (max-width: 750px) {
   .bottomRight  {
    transform: scale(0.4);
     bottom: -5p;
-    bottom: 0px;
+    bottom: -8px;
     right: -40px;
   }
 }
@@ -143,9 +144,7 @@ body {
 
 @media only screen and (max-width: 750px) {
 .holder .list ul {
-transform: scale(.7);
-    margin-left: -15vw;
-    margin-top: 1vh;
+    margin-top: 8vw;
 }
 }
 
@@ -158,12 +157,12 @@ transform: scale(.7);
       list-style: none;
     padding-left: 10px;
     margin-left: -10px;
-    padding: 4px;
-    font-size: 25px;
+    padding: 2px;
+    font-size: 27px;
 }
 @media only screen and (max-width: 750px) {
 .holder .list li {
-    padding: 2px;
+padding: 1px;
     font-size: 15px;
 }
 }
@@ -255,7 +254,7 @@ transform: scale(.7);
 }
 }
 .holder .placeholder:hover {
-  color:  #4242428a;
+  color:  #2519aef5;
 }
 
 .helper {
