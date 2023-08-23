@@ -1,5 +1,5 @@
-# iambezos
-References for iambezos.com
+# iammusk
+References for iammusk.com
 
 https://www.bloomberg.com/billionaires/ for CEOS - Data calculated as of 8/21/2023
 https://www.investopedia.com/personal-finance/how-much-income-puts-you-top-1-5-10/ for top .1%/1%
