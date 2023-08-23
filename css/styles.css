@@ -157,7 +157,7 @@ body {
   list-style: none;
       list-style: none;
     padding-left: 10px;
-    margin-left: -10px;
+
     padding: 2px;
     font-size: 27px;
 }
@@ -174,7 +174,7 @@ padding: 1px;
   color: #7b00ff;
   position: relative;
   color: #0f2f7ed9;
-    padding: 0px 10px 2px 8px;
+    padding: 0px 1px 0px 0px;
     border-radius: 8px;
 
 }
@@ -184,14 +184,15 @@ padding: 1px;
   height: 2px;
   width: 0;
   left: 0;
-  background: #0f2f7ed9;
+  background: #777aa3;
   bottom: 0;
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .holder .list a:hover {
   cursor: pointer;
-  background: #dbdbdb85;;
+  color: #777aa3;
+
 }
 .holder .list a:hover:after {
   width: 100%;
@@ -224,7 +225,7 @@ padding: 1px;
 .holder .placeholder {
   border-bottom: 4px solid;
   cursor: pointer;
-  color: black;
+    color:  #2519aef5;
 }
 
 @media only screen and (max-width: 750px) {
@@ -255,7 +256,8 @@ padding: 1px;
 }
 }
 .holder .placeholder:hover {
-  color:  #2519aef5;
+  color:  #777aa3;
+
 }
 
 .helper {

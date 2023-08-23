@@ -17,13 +17,18 @@ var x = setInterval(function() {
   var difference = (newSeconds - begSeconds) / 1000;
   newAmount = difference * increaseNumber;
   amountLarge = false;
-
+  amountSmall = false;
 
   if (/Android|webOS|iPhone|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent)) {
     if(newAmount > 9999999)
   {
     amountLarge = true;
   }
+}
+
+if(newAmount < 99.99)
+{
+  amountSmall = true;
 }
   newAmount = newAmount.toFixed(2);
   newAmount = numberWithCommas(newAmount);
@@ -37,7 +42,7 @@ var x = setInterval(function() {
   var dollarSpan = document.createElement("span");
   dollarSpan.textContent = "$";
   dollarSpan.style.color = "#196619";
-  dollarSpan.style.marginRight = "13px"; // Add some spacing
+  dollarSpan.style.marginRight = "11px"; // Add some spacing
   dollarSpan.style.fontSize = ".7em";
  dollarSpan.style.transform = "translateY(-10%)"; // Move up by 50% of its own height
   dollarSpan.style.position = "relative"; // Ensure transform works as intended
@@ -72,7 +77,12 @@ var x = setInterval(function() {
 
     if(i > newAmount.length - 4)
     {
-      charSpan.style.fontSize = ".9em";
+      charSpan.style.fontSize = ".35em";
+      if(amountSmall)
+      {
+              charSpan.style.fontSize = "1em";
+      }
+  
         if(amountLarge)
          {
             charSpan.style.fontSize = ".3em"; 
