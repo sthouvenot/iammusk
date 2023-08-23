@@ -166,7 +166,7 @@ transform: scale(.7);
   transition: all 0.4s;
   color: #7b00ff;
   position: relative;
-  color: #fffefe94;
+  color: white;
       background: #6e6e6e94;
     padding: 0px 10px 2px 8px;
     border-radius: 8px;
@@ -185,7 +185,7 @@ transform: scale(.7);
 }
 .holder .list a:hover {
   cursor: pointer;
-  color: white;;
+  background: #474646ba;;
 }
 .holder .list a:hover:after {
   width: 100%;
@@ -226,6 +226,12 @@ transform: scale(.7);
 .holder .placeholder  {
       border-bottom: 2px solid;
   }
+
+  .holder .list a {
+
+      color: white;
+
+}
 }
 
 
