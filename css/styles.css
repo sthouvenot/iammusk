@@ -79,19 +79,20 @@ body {
 @media only screen and (max-width: 750px) {
   .bottomleft  {
     transform: scale(.8);
-    margin-left: -10px;
+    margin-left: -24px;
     bottom: 0px;
   }
 }
 
 
 .bottomRight {
-    position: fixed;
-    bottom: 0px;
-    right: -25px;
+position: fixed;
+    bottom: 2.5px;
+    right: -19px;
     font-size: 18px;
     -webkit-backface-visibility: hidden;
-    transform: scale(0.59);
+    transform: scale(0.65);
+
 }
 
 @media only screen and (max-width: 750px) {
@@ -99,7 +100,7 @@ body {
    transform: scale(0.4);
     bottom: -5p;
     bottom: -8px;
-    right: -40px;
+    right: -49px;
   }
 }
 

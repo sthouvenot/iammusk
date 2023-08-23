@@ -71,7 +71,7 @@ var x = setInterval(function() {
 
     if(i > newAmount.length - 4)
     {
-      charSpan.style.fontSize = ".785em";
+      charSpan.style.fontSize = ".9em";
         if(amountLarge)
          {
             charSpan.style.fontSize = ".3em"; 
