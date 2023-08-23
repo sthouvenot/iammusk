@@ -51,7 +51,7 @@ var x = setInterval(function() {
 
     if(i > newAmount.length - 4)
     {
-      charSpan.style.fontSize = ".6em";
+      charSpan.style.fontSize = ".785em";
     }
 
     moneyElement.appendChild(charSpan);
