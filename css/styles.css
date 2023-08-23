@@ -166,7 +166,7 @@ transform: scale(.7);
   transition: all 0.4s;
   color: #7b00ff;
   position: relative;
-  color: white;
+  color: #0f2f7ed9;
       background: #6e6e6e94;
     padding: 0px 10px 2px 8px;
     border-radius: 8px;
@@ -178,14 +178,14 @@ transform: scale(.7);
   height: 5px;
   width: 0;
   left: 0;
-  background: white;
+  background: #0f2f7ed9;
   bottom: 0;
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .holder .list a:hover {
   cursor: pointer;
-  background: #474646ba;;
+  background: #dbdbdb85;;
 }
 .holder .list a:hover:after {
   width: 100%;
@@ -229,7 +229,7 @@ transform: scale(.7);
 
   .holder .list a {
 
-      color: white;
+     
 
 }
 }
