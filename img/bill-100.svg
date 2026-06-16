@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 106" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <clipPath id="oval100"><ellipse cx="125" cy="53" rx="30" ry="36"/></clipPath>
+    <linearGradient id="sheen100" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="246" height="102" rx="10" fill="#e5eef7" stroke="#366fa6" stroke-width="2.5"/>
+  <rect x="2" y="2" width="246" height="102" rx="10" fill="url(#sheen100)"/>
+  <rect x="10" y="9" width="230" height="88" rx="6" fill="none" stroke="#366fa6" stroke-width="1.3" opacity=".75"/>
+  <rect x="14" y="13" width="222" height="80" rx="4" fill="none" stroke="#366fa6" stroke-width=".6" opacity=".5"/>
+  <g fill="#366fa6" font-weight="bold" font-size="12">
+    <text x="22" y="30" text-anchor="start">100</text>
+    <text x="228" y="30" text-anchor="end">100</text>
+    <text x="22" y="93" text-anchor="start">100</text>
+    <text x="228" y="93" text-anchor="end">100</text>
+  </g>
+  <ellipse cx="125" cy="53" rx="30" ry="36" fill="#f1f6fb"/>
+  <g clip-path="url(#oval100)">
+    <rect x="95" y="17" width="60" height="72" fill="#e8f0f9"/>
+    <circle cx="125" cy="50" r="12" fill="#aecbe6"/>
+    <path d="M104 92 Q125 62 146 92 Z" fill="#aecbe6"/>
+  </g>
+  <ellipse cx="125" cy="53" rx="30" ry="36" fill="none" stroke="#366fa6" stroke-width="1.3"/>
+  <g stroke="#366fa6" fill="none" stroke-width="1.2" opacity=".8">
+    <circle cx="72" cy="53" r="13"/>
+    <circle cx="72" cy="53" r="9" stroke-dasharray="2 2"/>
+    <circle cx="178" cy="53" r="13"/>
+  </g>
+  <text x="72" y="58" fill="#366fa6" font-size="12" text-anchor="middle" font-weight="bold">$</text>
+  <text x="178" y="57" fill="#366fa6" font-size="7" text-anchor="middle" font-weight="bold">100</text>
+  <text x="125" y="16" fill="#366fa6" font-size="6.5" letter-spacing="1" text-anchor="middle">UNITED STATES OF AMERICA</text>
+  <text x="125" y="98" fill="#366fa6" font-size="7" letter-spacing="1.2" text-anchor="middle" font-weight="bold">ONE HUNDRED DOLLARS</text>
+</svg>

@@ -93,13 +93,29 @@ html, body {
   .resetHint { top: 44px; right: 8px; font-size: 10px; letter-spacing: 0.5px; }
 }
 
-/* ---- Money rain: depth + nicer drifting motion ---- */
+/* ---- Money rain: crisp SVG bills, mixed denominations, drifting motion ---- */
 .circles li {
-  border-radius: 3px;
-  filter: drop-shadow(0 8px 12px rgba(0, 40, 12, 0.28));
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0;
+  filter: drop-shadow(0 7px 11px rgba(0, 40, 12, 0.3));
   animation-name: floatMoney;
   animation-timing-function: ease-in-out;
 }
+
+/* Mix of denominations across the ten falling bills. */
+.circles li:nth-child(1)  { background-image: url(../img/bill-100.svg); }
+.circles li:nth-child(2)  { background-image: url(../img/bill-1.svg); }
+.circles li:nth-child(3)  { background-image: url(../img/bill-20.svg); }
+.circles li:nth-child(4)  { background-image: url(../img/bill-50.svg); }
+.circles li:nth-child(5)  { background-image: url(../img/bill-5.svg); }
+.circles li:nth-child(6)  { background-image: url(../img/bill-100.svg); }
+.circles li:nth-child(7)  { background-image: url(../img/bill-20.svg); }
+.circles li:nth-child(8)  { background-image: url(../img/bill-1.svg); }
+.circles li:nth-child(9)  { background-image: url(../img/bill-5.svg); }
+.circles li:nth-child(10) { background-image: url(../img/bill-50.svg); }
 @keyframes floatMoney {
   0%   { transform: translateY(0) translateX(0) rotate(-6deg); opacity: 0; }
   12%  { opacity: 0.95; }
