@@ -57,11 +57,13 @@ html, body {
   color: #0c451b;
   letter-spacing: 0.3px;
 }
-/* Force the hint arrow to render as a plain text glyph, never a color
-   emoji (which is what made it look clunky on mobile). */
+/* Custom SVG arrow (inherits the hint color, identical on every device). */
 .hintArrow {
-  font-variant-emoji: text;
+  display: inline-block;
+  vertical-align: -3px;
+  margin-right: 2px;
 }
+.hintArrow svg { display: block; }
 @media only screen and (max-width: 750px) {
   .clickHint { font-size: 12px; margin-top: 5px; }
 }
