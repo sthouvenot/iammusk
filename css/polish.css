@@ -97,7 +97,7 @@ html, body {
   border-radius: 0;
   filter: drop-shadow(0 8px 14px rgba(0, 40, 12, 0.32));
   animation-name: floatMoney;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in-out;
   will-change: transform, opacity;
 }
 
@@ -127,13 +127,16 @@ html, body {
 .circles li:nth-child(9)  { width: 124px; height: 53px; }
 .circles li:nth-child(10) { width: 188px; height: 80px; }
 
+/* Bills flutter and sway upward like real paper money drifting on a breeze:
+   side-to-side swing + a soft wobble (never edge-on), with parallax scale. */
 @keyframes floatMoney {
-  0%   { transform: perspective(600px) translateY(8vh)   translateX(0)     rotateZ(-10deg) rotateY(0deg)   scale(0.9);  opacity: 0; }
+  0%   { transform: translateY(8vh)   translateX(0)     rotate(-8deg) scale(0.9);  opacity: 0; }
   10%  { opacity: 0.96; }
-  30%  { transform: perspective(600px) translateY(-25vh) translateX(36px)  rotateZ(110deg) rotateY(180deg) scale(1); }
-  60%  { transform: perspective(600px) translateY(-65vh) translateX(-26px) rotateZ(225deg) rotateY(360deg) scale(1.06); }
+  25%  { transform: translateY(-22vh) translateX(26px)  rotate(9deg)  scale(1); }
+  50%  { transform: translateY(-55vh) translateX(-20px) rotate(-8deg) scale(1.05); }
+  75%  { transform: translateY(-88vh) translateX(22px)  rotate(7deg)  scale(1.09); }
   88%  { opacity: 0.9; }
-  100% { transform: perspective(600px) translateY(-122vh) translateX(16px) rotateZ(372deg) rotateY(560deg) scale(1.12); opacity: 0; }
+  100% { transform: translateY(-122vh) translateX(-6px) rotate(-3deg) scale(1.12); opacity: 0; }
 }
 
 @media only screen and (max-width: 750px) {
