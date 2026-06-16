@@ -1,64 +1,46 @@
-console.clear();
+// Dropdown interaction — vanilla JS (no jQuery).
+// Rates (muskIncrease, etc.) and the global `increaseNumber` come from money.js,
+// which is loaded before this file.
 
-var el = {};
+const RATES = {
+  "Elon Musk": muskIncrease,
+  "Mark Zuckerberg": zuckIncrease,
+  "Jeff Bezos": bezosIncrease,
+  "Bill Gates": gatesIncrease,
+  "a top .1% income earner": toppointIncrease,
+  "a top 1% income earner": toponeIncrease,
+  "an average American": avgAmericanIncrease,
+  "a minimum wage worker": avgMinimumWage,
+};
 
-$(document).click(function(){
-  $('.list__ul').hide();
+const placeholder = document.querySelector(".placeholder");
+const listUl = document.querySelector(".list__ul");
+const clickIcon = document.getElementById("clickIcon");
+
+// Click anywhere on the page closes the dropdown.
+document.addEventListener("click", function () {
+  listUl.style.display = "none";
 });
 
-$(".placeholder").click(function(e){
+// Clicking the current selection toggles the dropdown open.
+placeholder.addEventListener("click", function (e) {
   e.stopPropagation();
+  if (clickIcon) clickIcon.style.visibility = "hidden";
+  placeholder.style.opacity = "1";
+  listUl.style.display = listUl.style.display === "block" ? "none" : "block";
 });
 
-
-$('.placeholder').on('click', function(ev) {
-  var element2 = document.getElementById("clickIcon");
-
-  element2.style.visibility = "hidden";
-  $('.placeholder').css('opacity', '1');
-  $('.list__ul').toggle();
-});
-
-$('.list__ul a').on('click', function(ev) {
-  ev.preventDefault();
-  var index = $(this).parent().index();
-
-  $('.placeholder').text($(this).text()).css('opacity', '1');
-
-  switch ($(this).text()) {
-    case "Jeff Bezos":
-      increaseNumber = bezosIncrease;
-      break;
-    case "Bill Gates":
-      increaseNumber = gatesIncrease;
-      break;
-    case "Elon Musk":
-      increaseNumber = muskIncrease;
-      break;
-    case "Mark Zuckerberg":
-      increaseNumber = zuckIncrease;
-      break;
-    case "a top .1% income earner":
-      increaseNumber = toppointIncrease;
-      break;
-    case "a top 1% income earner":
-      increaseNumber = toponeIncrease;
-      break;
-    case "an average American":
-      increaseNumber = avgAmericanIncrease;
-      break;
-    case "a minimum wage worker":
-      increaseNumber = avgMinimumWage;
-  }
-
-  $('.list__ul').toggle();
-
-});
-
-
-$('select').on('change', function(e) {
-  $('.placeholder').text(this.value);
-  $(this).animate({
-    width: $('.placeholder').width() + 'px'
+// Picking an option updates the label and the counter's rate.
+listUl.querySelectorAll("a").forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    const name = link.textContent.trim();
+    placeholder.textContent = name;
+    placeholder.style.opacity = "1";
+    if (name in RATES) {
+      increaseNumber = RATES[name];
+    }
+    listUl.style.display = "none";
   });
 });
