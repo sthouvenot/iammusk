@@ -1,12 +1,16 @@
 speed = 10;
 
-bezosIncrease = 1636.01;
-gatesIncrease = 538.99;
-muskIncrease = 2511.09;
-zuckIncrease = 1896.00;
-toppointIncrease = 0.10185434369 ;
-toponeIncrease = 0.02611804058;
-avgAmericanIncrease = 0.00192057704;
+// Per-second figures, updated June 16, 2026.
+// Each person's YTD net-worth change is treated as an annual rate and
+// divided by 31,536,000 seconds/year. Income tiers use annual income.
+// See README.md for sources and exact yearly figures.
+bezosIncrease = 443.94;
+gatesIncrease = 317.10;
+muskIncrease = 20738.46;
+zuckIncrease = 684.93;
+toppointIncrease = 0.10504480;
+toponeIncrease = 0.02536783;
+avgAmericanIncrease = 0.00211257;
 avgMinimumWage = 0.00047812301;
 
 var begSeconds = new Date().getTime();

@@ -1,7 +1,7 @@
 # iammusk
 References for iammusk.com
 
-https://www.bloomberg.com/billionaires/ for CEOS - Data calculated as of 8/21/2023
+https://www.bloomberg.com/billionaires/ for CEOS - Data refreshed as of 6/16/2026
 https://www.investopedia.com/personal-finance/how-much-income-puts-you-top-1-5-10/ for top .1%/1%
 https://www.sofi.com/learn/content/average-salary-in-us/ for average US salary
 https://poverty.ucdavis.edu/faq/what-are-annual-earnings-full-time-minimum-wage-worker for minimum wage
@@ -14,36 +14,44 @@ On the other hand, when evaluating average Americans, using 'income' provides a 
 
 In essence, the distinction between 'net worth' for CEOs and 'income' for average Americans ensures a fair and accurate comparison. It takes into account the distinct financial dynamics of these two groups, providing a balanced representation of their respective financial standings.
 
-Note:
+Note (figures refreshed 6/16/2026; each per-second value = yearly figure / 31,536,000):
 
 Elon Musk:
-YTD Change: 79,200,000,000 / year
-= 2511.09 / second
+YTD Change: 654,000,000,000 / year
+= 20738.46 / second
 
 Mark Zuckerberg:
-YTD Change: 59,800,000,000 / year
-= 1896.00 / second
+YTD Change: 21,600,000,000 / year
+= 684.93 / second
 
 Jeff Bezos:
-YTD Change: 51,600,000,000 / year
-= 1636.01 / second
+YTD Change: 14,000,000,000 / year
+= 443.94 / second
 
 Bill Gates:
-YTD Change: 17,000,000,000 / year
-= 538.99 / second
+YTD Change: 10,000,000,000 / year (estimate; sources incomplete)
+= 317.10 / second
 
 a top .1% income earner:
-3,212,486 / year
-= 0.10185434369 / second
+3,312,693 / year
+= 0.10504480 / second
 
 a top 1% income earner:
-823,763 / year
-= 0.02611804058 / second
+800,000 / year
+= 0.02536783 / second
 
 an average american:
-60,575 / year
-= 0.00192057704 / second
+66,622 / year
+= 0.00211257 / second
 
 a minimum wage worker:
-15,080 / year
+15,080 / year (federal minimum wage still $7.25/hr — unchanged since 2009)
 = 0.00047812301 / second
+
+---
+2026 refresh notes:
+- Billionaire YTD changes are from the Bloomberg Billionaires Index. 2026 sources
+  disagree significantly on Musk (the SpaceX-IPO "trillionaire" narrative); the
+  figure above reflects the high-end Bloomberg snapshot. Gates' YTD is an estimate.
+- Top 0.1% / top 1% income thresholds and the U.S. average salary are approximate
+  2026 figures and easy to tweak in js/money.js if you find better sources.
