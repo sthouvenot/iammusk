@@ -73,12 +73,13 @@ html, body {
   opacity: 0.85;
   outline: none;
   -webkit-tap-highlight-color: transparent;
-  transition: opacity 0.15s ease, transform 0.12s ease;
+  /* Only opacity transitions — never transform, so the spin doesn't
+     flick back to a hover/resting angle when it finishes. */
+  transition: opacity 0.15s ease;
 }
 .topRight:focus { outline: none; }
-/* Spin only where hovering is possible (desktop), so it doesn't stick on tap. */
 @media (hover: hover) {
-  .topRight:hover { opacity: 1; transform: rotate(-35deg); }
+  .topRight:hover { opacity: 1; }
 }
 /* Press feedback on click/tap — a clean scale-down, clears on release. */
 .topRight:active { opacity: 1; transform: scale(0.78); }
