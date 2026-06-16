@@ -37,14 +37,12 @@ Figures refreshed **June 16, 2026**.
 | Elon Musk | $654,000,000,000 | **$20,738.46** |
 | Mark Zuckerberg | $21,600,000,000 | **$684.93** |
 | Jeff Bezos | $14,000,000,000 | **$443.94** |
-| Bill Gates | $10,000,000,000 * | **$317.10** |
 | Top 0.1% income earner | $3,312,693 | $0.105 |
 | Top 1% income earner | $800,000 | $0.025 |
 | Average American | $66,622 | $0.0021 |
-| Minimum-wage worker | $15,080 † | $0.00048 |
+| Minimum-wage worker | $15,080 * | $0.00048 |
 
-\* Estimate — 2026 sources for Gates' year-to-date change were incomplete.
-† Full-time at the **federal minimum wage of $7.25/hr — unchanged since 2009.**
+\* Full-time at the **federal minimum wage of $7.25/hr — unchanged since 2009.**
 
 For billionaires the per-year value is the year-to-date change in net worth (from the
 [Bloomberg Billionaires Index](https://www.bloomberg.com/billionaires/)); for everyday

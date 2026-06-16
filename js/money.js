@@ -5,7 +5,6 @@ speed = 10;
 // divided by 31,536,000 seconds/year. Income tiers use annual income.
 // See README.md for sources and exact yearly figures.
 bezosIncrease = 443.94;
-gatesIncrease = 317.10;
 muskIncrease = 20738.46;
 zuckIncrease = 684.93;
 toppointIncrease = 0.10504480;

@@ -6,7 +6,6 @@ const RATES = {
   "Elon Musk": muskIncrease,
   "Mark Zuckerberg": zuckIncrease,
   "Jeff Bezos": bezosIncrease,
-  "Bill Gates": gatesIncrease,
   "a top .1% income earner": toppointIncrease,
   "a top 1% income earner": toponeIncrease,
   "an average American": avgAmericanIncrease,
