@@ -88,16 +88,17 @@ html, body {
   .resetHint { top: 44px; right: 8px; font-size: 10px; letter-spacing: 0.5px; }
 }
 
-/* ---- Money rain: crisp SVG bills, mixed denominations, drifting motion ---- */
+/* ---- Money rain: real bills, 3D tumble, parallax depth ---- */
 .circles li {
   background-color: transparent;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 0;
-  filter: drop-shadow(0 7px 11px rgba(0, 40, 12, 0.3));
+  filter: drop-shadow(0 8px 14px rgba(0, 40, 12, 0.32));
   animation-name: floatMoney;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
+  will-change: transform, opacity;
 }
 
 /* Real US bills (public-domain Wikimedia Commons scans), mixed across the ten. */
@@ -111,16 +112,43 @@ html, body {
 .circles li:nth-child(8)  { background-image: url(../img/real-1.jpg); }
 .circles li:nth-child(9)  { background-image: url(../img/real-100.png); }
 .circles li:nth-child(10) { background-image: url(../img/real-50.jpg); }
+
+/* Re-size the bills: no more tiny specks, with parallax variety.
+   Heights stay near the real ~2.35:1 bill ratio. The far/small ones
+   get a touch of blur for depth of field. */
+.circles li:nth-child(1)  { width: 150px; height: 64px; }
+.circles li:nth-child(2)  { width: 92px;  height: 39px; filter: drop-shadow(0 6px 10px rgba(0,40,12,.28)) blur(0.4px); }
+.circles li:nth-child(3)  { width: 112px; height: 48px; }
+.circles li:nth-child(4)  { width: 132px; height: 56px; }
+.circles li:nth-child(5)  { width: 84px;  height: 36px; filter: drop-shadow(0 6px 10px rgba(0,40,12,.28)) blur(0.5px); }
+.circles li:nth-child(6)  { width: 172px; height: 73px; }
+.circles li:nth-child(7)  { width: 104px; height: 44px; }
+.circles li:nth-child(8)  { width: 96px;  height: 41px; filter: drop-shadow(0 6px 10px rgba(0,40,12,.28)) blur(0.4px); }
+.circles li:nth-child(9)  { width: 124px; height: 53px; }
+.circles li:nth-child(10) { width: 188px; height: 80px; }
+
 @keyframes floatMoney {
-  0%   { transform: translateY(0) translateX(0) rotate(-6deg); opacity: 0; }
-  12%  { opacity: 0.95; }
-  50%  { transform: translateY(-55vh) translateX(28px) rotate(170deg); }
+  0%   { transform: perspective(600px) translateY(8vh)   translateX(0)     rotateZ(-10deg) rotateY(0deg)   scale(0.9);  opacity: 0; }
+  10%  { opacity: 0.96; }
+  30%  { transform: perspective(600px) translateY(-25vh) translateX(36px)  rotateZ(110deg) rotateY(180deg) scale(1); }
+  60%  { transform: perspective(600px) translateY(-65vh) translateX(-26px) rotateZ(225deg) rotateY(360deg) scale(1.06); }
   88%  { opacity: 0.9; }
-  100% { transform: translateY(-112vh) translateX(-12px) rotate(372deg); opacity: 0; }
+  100% { transform: perspective(600px) translateY(-122vh) translateX(16px) rotateZ(372deg) rotateY(560deg) scale(1.12); opacity: 0; }
 }
 
 @media only screen and (max-width: 750px) {
   .area {
     box-shadow: inset 0 0 140px rgba(0, 38, 12, 0.34);
   }
+  /* Scale the bills down on phones but keep them readable. */
+  .circles li:nth-child(1)  { width: 96px;  height: 41px; }
+  .circles li:nth-child(2)  { width: 62px;  height: 26px; }
+  .circles li:nth-child(3)  { width: 74px;  height: 31px; }
+  .circles li:nth-child(4)  { width: 86px;  height: 37px; }
+  .circles li:nth-child(5)  { width: 58px;  height: 25px; }
+  .circles li:nth-child(6)  { width: 110px; height: 47px; }
+  .circles li:nth-child(7)  { width: 70px;  height: 30px; }
+  .circles li:nth-child(8)  { width: 64px;  height: 27px; }
+  .circles li:nth-child(9)  { width: 80px;  height: 34px; }
+  .circles li:nth-child(10) { width: 120px; height: 51px; }
 }
