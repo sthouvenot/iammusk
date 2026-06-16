@@ -25,7 +25,8 @@
 </head>
 
 <body style="overflow:hidden">
-  <input class="topRight" onclick="reseter()" type="image" src="img/undo.png" />
+  <input class="topRight" onclick="reseter()" type="image" src="img/undo.png" title="Reset your net worth back to $0" alt="Reset" />
+  <span class="resetHint">reset</span>
   <div class="holder">
     <div class="helper wrapper typo" style="">I am
       <div class="list"><span class="placeholder" >Elon Musk</span>     
@@ -41,6 +42,7 @@
         </ul>
       </div>
       <img src="img/click.png" id="clickIcon" class="clickIcon" alt="" />
+      <span class="clickHint" id="clickHint">&#8598; tap a name to switch</span>
     </div>
   </div>
   <div class="context" style=" z-index:999;" >
