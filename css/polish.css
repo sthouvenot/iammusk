@@ -61,15 +61,21 @@ html, body {
   .clickHint { font-size: 12px; margin-top: 5px; }
 }
 
-/* ---- Top-right: make reset read as a button ---- */
+/* ---- Top-right: make reset read as a button with press feedback ---- */
 .topRight {
   opacity: 0.85;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: opacity 0.15s ease, transform 0.12s ease;
 }
-.topRight:hover {
-  opacity: 1;
-  transform: rotate(-35deg);
+.topRight:focus { outline: none; }
+/* Spin only where hovering is possible (desktop), so it doesn't stick on tap. */
+@media (hover: hover) {
+  .topRight:hover { opacity: 1; transform: rotate(-35deg); }
 }
+/* Press feedback on click/tap — a clean scale-down, clears on release. */
+.topRight:active { opacity: 1; transform: scale(0.82); }
+
 .resetHint {
   position: fixed;
   top: 60px;
@@ -85,7 +91,9 @@ html, body {
   pointer-events: none;
 }
 @media only screen and (max-width: 750px) {
-  .resetHint { top: 44px; right: 8px; font-size: 10px; letter-spacing: 0.5px; }
+  /* Bigger tap target, label tucked right beneath it. */
+  .topRight { width: 30px; top: 14px; right: 12px; }
+  .resetHint { top: 48px; right: 9px; font-size: 10px; letter-spacing: 0.5px; }
 }
 
 /* ---- Money rain: real bills, 3D tumble, parallax depth ---- */
@@ -171,7 +179,8 @@ html, body {
   /* Drop the arrow glyph on mobile (renders as a clunky emoji). */
   .hintArrow { display: none; }
 
-  /* Smaller "Sources" link on phones, anchored so it isn't clipped at the edge. */
+  /* Smaller "Sources" link on phones, anchored so it isn't clipped at the edge
+     and raised to sit level with the "Buy me a coffee" button on the right. */
   .bottomlefter a { font-size: 11px !important; }
-  .bottomleft { margin-left: 2px; transform-origin: left bottom; }
+  .bottomleft { margin-left: 2px; transform-origin: left bottom; bottom: 12px; }
 }
