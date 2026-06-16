@@ -103,4 +103,11 @@ var increaseNumber = muskIncrease;
 
 function reseter() {
   begSeconds = new Date().getTime();
+  // Spin the button as visual feedback that the reset fired.
+  var btn = document.querySelector(".topRight");
+  if (btn) {
+    btn.classList.remove("spinning");
+    void btn.offsetWidth; // force reflow so the animation restarts every click
+    btn.classList.add("spinning");
+  }
 }

@@ -74,7 +74,15 @@ html, body {
   .topRight:hover { opacity: 1; transform: rotate(-35deg); }
 }
 /* Press feedback on click/tap — a clean scale-down, clears on release. */
-.topRight:active { opacity: 1; transform: scale(0.82); }
+.topRight:active { opacity: 1; transform: scale(0.78); }
+
+/* Confirmation spin fired from reseter() on every reset. */
+.topRight.spinning { animation: resetSpin 0.5s cubic-bezier(0.34, 1.4, 0.5, 1); }
+@keyframes resetSpin {
+  0%   { transform: rotate(0deg) scale(1); }
+  35%  { transform: rotate(-160deg) scale(0.72); }
+  100% { transform: rotate(-360deg) scale(1); }
+}
 
 .resetHint {
   position: fixed;
@@ -152,11 +160,11 @@ html, body {
    side-to-side swing + a soft wobble (never edge-on), with parallax scale. */
 @keyframes floatMoney {
   0%   { transform: translateY(8vh)   translateX(0)     rotate(-8deg) scale(0.9);  opacity: 0; }
-  10%  { opacity: 0.96; }
+  10%  { opacity: 0.82; }
   25%  { transform: translateY(-22vh) translateX(26px)  rotate(9deg)  scale(1); }
   50%  { transform: translateY(-55vh) translateX(-20px) rotate(-8deg) scale(1.05); }
   75%  { transform: translateY(-88vh) translateX(22px)  rotate(7deg)  scale(1.09); }
-  88%  { opacity: 0.9; }
+  88%  { opacity: 0.82; }
   100% { transform: translateY(-122vh) translateX(-6px) rotate(-3deg) scale(1.12); opacity: 0; }
 }
 
@@ -182,5 +190,5 @@ html, body {
   /* Smaller "Sources" link on phones, anchored so it isn't clipped at the edge
      and raised to sit level with the "Buy me a coffee" button on the right. */
   .bottomlefter a { font-size: 11px !important; }
-  .bottomleft { margin-left: 2px; transform-origin: left bottom; bottom: 12px; }
+  .bottomleft { margin-left: 2px; transform-origin: left bottom; bottom: 10px; }
 }
