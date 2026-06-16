@@ -53,10 +53,9 @@ html, body {
   margin-left: 2px;
   font-family: "Exo", sans-serif;
   font-size: 15px;
-  font-weight: 600;
-  color: #0a5f1e;
+  font-weight: 700;
+  color: #063110;
   letter-spacing: 0.3px;
-  opacity: 0.9;
 }
 @media only screen and (max-width: 750px) {
   .clickHint { font-size: 12px; margin-top: 5px; }
@@ -65,15 +64,11 @@ html, body {
 /* ---- Top-right: make reset read as a button ---- */
 .topRight {
   opacity: 0.85;
-  background: rgba(255, 255, 255, 0.18);
-  border-radius: 50%;
-  padding: 7px;
-  box-sizing: content-box;
-  transition: opacity 0.2s ease, transform 0.2s ease, background 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 .topRight:hover {
+  opacity: 1;
   transform: rotate(-35deg);
-  background: rgba(255, 255, 255, 0.32);
 }
 .resetHint {
   position: fixed;
@@ -105,17 +100,17 @@ html, body {
   animation-timing-function: ease-in-out;
 }
 
-/* Mix of denominations across the ten falling bills. */
-.circles li:nth-child(1)  { background-image: url(../img/bill-100.svg); }
-.circles li:nth-child(2)  { background-image: url(../img/bill-1.svg); }
-.circles li:nth-child(3)  { background-image: url(../img/bill-20.svg); }
-.circles li:nth-child(4)  { background-image: url(../img/bill-50.svg); }
-.circles li:nth-child(5)  { background-image: url(../img/bill-5.svg); }
-.circles li:nth-child(6)  { background-image: url(../img/bill-100.svg); }
-.circles li:nth-child(7)  { background-image: url(../img/bill-20.svg); }
-.circles li:nth-child(8)  { background-image: url(../img/bill-1.svg); }
-.circles li:nth-child(9)  { background-image: url(../img/bill-5.svg); }
-.circles li:nth-child(10) { background-image: url(../img/bill-50.svg); }
+/* Real US bills (public-domain Wikimedia Commons scans), mixed across the ten. */
+.circles li:nth-child(1)  { background-image: url(../img/real-100.png); }
+.circles li:nth-child(2)  { background-image: url(../img/real-1.jpg); }
+.circles li:nth-child(3)  { background-image: url(../img/real-20.jpg); }
+.circles li:nth-child(4)  { background-image: url(../img/real-50.jpg); }
+.circles li:nth-child(5)  { background-image: url(../img/real-5.jpg); }
+.circles li:nth-child(6)  { background-image: url(../img/real-10.jpg); }
+.circles li:nth-child(7)  { background-image: url(../img/real-20.jpg); }
+.circles li:nth-child(8)  { background-image: url(../img/real-1.jpg); }
+.circles li:nth-child(9)  { background-image: url(../img/real-100.png); }
+.circles li:nth-child(10) { background-image: url(../img/real-50.jpg); }
 @keyframes floatMoney {
   0%   { transform: translateY(0) translateX(0) rotate(-6deg); opacity: 0; }
   12%  { opacity: 0.95; }
