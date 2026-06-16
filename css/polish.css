@@ -97,9 +97,22 @@ html, body {
   border-radius: 0;
   filter: drop-shadow(0 8px 14px rgba(0, 40, 12, 0.32));
   animation-name: floatMoney;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
   will-change: transform, opacity;
 }
+
+/* Faster, steady durations so bills sail off-screen without crawling
+   or pausing (overrides the slow 18s/35s/45s values in animated.css). */
+.circles li:nth-child(1)  { animation-duration: 7s; }
+.circles li:nth-child(2)  { animation-duration: 5.5s; }
+.circles li:nth-child(3)  { animation-duration: 6.5s; }
+.circles li:nth-child(4)  { animation-duration: 8s; }
+.circles li:nth-child(5)  { animation-duration: 5s; }
+.circles li:nth-child(6)  { animation-duration: 9s; }
+.circles li:nth-child(7)  { animation-duration: 6s; }
+.circles li:nth-child(8)  { animation-duration: 7.5s; }
+.circles li:nth-child(9)  { animation-duration: 6.8s; }
+.circles li:nth-child(10) { animation-duration: 9.5s; }
 
 /* Real US bills (public-domain Wikimedia Commons scans), mixed across the ten. */
 .circles li:nth-child(1)  { background-image: url(../img/real-100.png); }
