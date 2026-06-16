@@ -41,7 +41,7 @@
     position: absolute;width: 20px;
 }
 }
-}html, body {
+html, body {
   overflow-x: hidden;
 }
 body {
@@ -98,7 +98,6 @@ position: fixed;
 @media only screen and (max-width: 750px) {
   .bottomRight  {
    transform: scale(0.4);
-    bottom: -5p;
     bottom: -8px;
     right: -49px;
   }
