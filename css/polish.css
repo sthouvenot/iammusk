@@ -53,7 +53,7 @@ html, body {
     1px 2px 3px rgba(0, 40, 12, 0.4);
 }
 .netWorth {
-  letter-spacing: 4px;
+  letter-spacing: 1px;
 }
 .ifstate {
   opacity: 0.92;
