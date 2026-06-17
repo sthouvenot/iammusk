@@ -61,7 +61,7 @@ html, body {
 .hintArrow {
   display: inline-block;
   vertical-align: -3px;
-  margin-right: 2px;
+  margin-left: 3px;
 }
 .hintArrow svg { display: block; }
 @media only screen and (max-width: 750px) {
@@ -171,13 +171,13 @@ html, body {
 /* Bills flutter and sway upward like real paper money drifting on a breeze:
    side-to-side swing + a soft wobble (never edge-on), with parallax scale. */
 @keyframes floatMoney {
-  0%   { transform: translateY(8vh)   translateX(0)     rotate(-8deg) scale(0.9);  opacity: 0; }
+  0%   { transform: translateY(-122vh) translateX(0)    rotate(-8deg) scale(0.9);  opacity: 0; }
   10%  { opacity: 0.82; }
-  25%  { transform: translateY(-22vh) translateX(26px)  rotate(9deg)  scale(1); }
-  50%  { transform: translateY(-55vh) translateX(-20px) rotate(-8deg) scale(1.05); }
-  75%  { transform: translateY(-88vh) translateX(22px)  rotate(7deg)  scale(1.09); }
+  25%  { transform: translateY(-88vh) translateX(26px)  rotate(9deg)  scale(0.96); }
+  50%  { transform: translateY(-55vh) translateX(-20px) rotate(-8deg) scale(1.02); }
+  75%  { transform: translateY(-22vh) translateX(22px)  rotate(7deg)  scale(1.08); }
   88%  { opacity: 0.82; }
-  100% { transform: translateY(-122vh) translateX(-6px) rotate(-3deg) scale(1.12); opacity: 0; }
+  100% { transform: translateY(8vh)   translateX(-6px)  rotate(-3deg) scale(1.12); opacity: 0; }
 }
 
 @media only screen and (max-width: 750px) {
