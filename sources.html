@@ -12,6 +12,8 @@
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
+    html, body { overflow-x: hidden; }
+
     body {
       min-height: 100vh;
       background: radial-gradient(125% 125% at 50% 18%,
@@ -114,6 +116,17 @@
     ul.sources li:last-child { border-bottom: 0; }
     a.link { color: #2519ae; font-weight: 600; text-decoration: none; }
     a.link:hover { text-decoration: underline; }
+
+    /* Mobile: tighter padding + smaller table so it fits with equal margins. */
+    @media only screen and (max-width: 600px) {
+      body { padding: 64px 12px 44px; }
+      .card { padding: 24px 18px 30px; }
+      h1 { font-size: 25px; }
+      h2 { font-size: 20px; }
+      p { font-size: 15px; }
+      table { font-size: 13px; }
+      th, td { padding: 7px 9px; }
+    }
   </style>
 </head>
 
