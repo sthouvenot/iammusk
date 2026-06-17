@@ -80,7 +80,7 @@ html, body {
 /* Custom SVG arrow (inherits the hint color, identical on every device). */
 .hintArrow {
   display: inline-block;
-  vertical-align: -2px;
+  vertical-align: 3px;
   margin-left: -3px;
   transform: scaleX(-1);
 }
