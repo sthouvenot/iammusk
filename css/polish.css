@@ -31,14 +31,8 @@ html, body {
     0 0 9px rgba(20, 255, 0, 0.5),
     1px 2px 3px rgba(0, 40, 12, 0.4);
 }
-/* "NET WORTH" — same deep green + fade as the dollar sign. */
 .netWorth {
-  color: #196619;
   letter-spacing: 4px;
-  text-shadow:
-    0 0 24px rgba(13, 220, 60, 0.85),
-    0 0 9px rgba(20, 255, 0, 0.5),
-    1px 2px 3px rgba(0, 40, 12, 0.4);
 }
 .ifstate {
   opacity: 0.92;

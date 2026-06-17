@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sources &amp; Code &middot; I Am Musk</title>
+  <meta name="description" content="The numbers and sources behind I Am Musk">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="img/logo2.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Exo:400,700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(125% 125% at 50% 18%,
+                  #8dffa0 0%, #25d44a 42%, #0c9a2e 78%, #077a25 100%);
+      background-attachment: fixed;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: #1f2328;
+      -webkit-font-smoothing: antialiased;
+      padding: 72px 20px 56px;
+    }
+
+    /* Back arrow, top-left */
+    .back {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 14px 8px 11px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.16);
+      color: #06280c;
+      text-decoration: none;
+      font-family: "Exo", sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.3px;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    .back:hover { background: rgba(255, 255, 255, 0.34); transform: translateX(-2px); }
+    .back svg { display: block; }
+
+    /* Readme-style card */
+    .card {
+      max-width: 760px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 1px solid #d0d7de;
+      border-radius: 14px;
+      box-shadow: 0 18px 50px rgba(0, 30, 10, 0.28);
+      padding: 36px 40px 40px;
+    }
+
+    h1 {
+      font-family: "Exo", sans-serif;
+      font-size: 30px;
+      letter-spacing: 0.5px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #d8dee4;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-family: "Exo", sans-serif;
+      font-size: 22px;
+      margin: 34px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #d8dee4;
+    }
+    p { line-height: 1.6; margin-bottom: 18px; color: #404a53; }
+    code {
+      background: #eff1f3;
+      border-radius: 6px;
+      padding: 1px 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.88em;
+      color: #0a5f1e;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 6px 0 10px;
+      font-size: 15px;
+    }
+    th, td {
+      border: 1px solid #d0d7de;
+      padding: 9px 13px;
+      text-align: left;
+    }
+    th {
+      background: #f3f5f7;
+      font-weight: 700;
+      font-family: "Exo", sans-serif;
+    }
+    tbody tr:nth-child(even) { background: #f9fafb; }
+    td.rate { font-weight: 700; color: #0c7a26; white-space: nowrap; }
+    td.who { font-weight: 600; }
+    .foot { font-size: 13px; color: #6a737d; margin-top: 10px; }
+
+    ul.sources { list-style: none; }
+    ul.sources li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eef1f3;
+      line-height: 1.5;
+    }
+    ul.sources li:last-child { border-bottom: 0; }
+    a.link { color: #0a7d29; font-weight: 600; text-decoration: none; }
+    a.link:hover { text-decoration: underline; }
+  </style>
+</head>
+
+<body>
+  <a class="back" href="index.html" aria-label="Back to home">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 5 8 12l7 7" />
+    </svg>
+    Home
+  </a>
+
+  <main class="card">
+    <h1>The Numbers</h1>
+    <p>
+      Net worths from the Bloomberg Billionaires Index (June 15, 2026), except Taylor Swift,
+      who is below the index's cutoff and uses a Forbes (2026) figure. Working life is counted
+      in seconds as <code>(age - 18) &times; 31,536,000</code>; income per second is
+      <code>annual income / 31,536,000</code>.
+    </p>
+
+    <table>
+      <thead>
+        <tr><th>Who</th><th>Basis</th><th>Per second</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="who">Elon Musk</td><td>$1.27T net worth / 36 working yrs</td><td class="rate">$1,118.65</td></tr>
+        <tr><td class="who">Mark Zuckerberg</td><td>$229B net worth / 24 working yrs</td><td class="rate">$302.56</td></tr>
+        <tr><td class="who">Jeff Bezos</td><td>$267B net worth / 44 working yrs</td><td class="rate">$192.42</td></tr>
+        <tr><td class="who">Taylor Swift</td><td>$2B net worth / 18 working yrs</td><td class="rate">$3.52</td></tr>
+        <tr><td class="who">Top 0.1% income earner</td><td>$3,312,693 / yr</td><td class="rate">$0.105</td></tr>
+        <tr><td class="who">Top 1% income earner</td><td>$800,000 / yr</td><td class="rate">$0.025</td></tr>
+        <tr><td class="who">Average American</td><td>$66,622 / yr</td><td class="rate">$0.0021</td></tr>
+        <tr><td class="who">Minimum-wage worker</td><td>$15,080 / yr *</td><td class="rate">$0.00048</td></tr>
+      </tbody>
+    </table>
+    <p class="foot">* Full-time at the federal minimum wage of $7.25/hr, unchanged since 2009.</p>
+
+    <h2>Sources</h2>
+    <ul class="sources">
+      <li>Billionaire wealth: <a class="link" href="https://www.bloomberg.com/billionaires/" target="_blank" rel="noopener">Bloomberg Billionaires Index</a></li>
+      <li>Taylor Swift net worth: <a class="link" href="https://www.forbes.com/profile/taylor-swift/" target="_blank" rel="noopener">Forbes</a></li>
+      <li>Top 0.1% / 1% income: <a class="link" href="https://www.investopedia.com/personal-finance/how-much-income-puts-you-top-1-5-10/" target="_blank" rel="noopener">Investopedia</a></li>
+      <li>Average U.S. salary: <a class="link" href="https://www.sofi.com/learn/content/average-salary-in-us/" target="_blank" rel="noopener">SoFi</a></li>
+      <li>Minimum wage: <a class="link" href="https://poverty.ucdavis.edu/faq/what-are-annual-earnings-full-time-minimum-wage-worker" target="_blank" rel="noopener">UC Davis Center for Poverty Research</a></li>
+      <li>Code: <a class="link" href="https://github.com/sthouvenot/iammusk" target="_blank" rel="noopener">github.com/sthouvenot/iammusk</a></li>
+    </ul>
+  </main>
+</body>
+
+</html>
