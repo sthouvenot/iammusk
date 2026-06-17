@@ -73,13 +73,17 @@ html, body {
   opacity: 0.85;
   outline: none;
   -webkit-tap-highlight-color: transparent;
-  /* Only opacity transitions — never transform, so the spin doesn't
-     flick back to a hover/resting angle when it finishes. */
-  transition: opacity 0.15s ease;
+  /* Transition opacity/filter only — never transform, so the spin
+     doesn't flick back to a hover/resting angle when it finishes. */
+  transition: opacity 0.15s ease, filter 0.15s ease;
 }
 .topRight:focus { outline: none; }
 @media (hover: hover) {
-  .topRight:hover { opacity: 1; }
+  /* Glow + brighten so it's obvious the button is being hovered. */
+  .topRight:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.9)) brightness(1.2);
+  }
 }
 /* Press feedback on click/tap — a clean scale-down, clears on release. */
 .topRight:active { opacity: 1; transform: scale(0.78); }
