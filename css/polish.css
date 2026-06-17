@@ -22,12 +22,19 @@ html, body {
 .moneyclass {
   font-variant-numeric: tabular-nums;
 }
+/* "NET WORTH" — elegant serif gold label to contrast the big white digits. */
 .netWorth {
-  letter-spacing: 3px;
+  font-family: "Playfair Display", Georgia, serif;
+  color: #ffd45e;
+  letter-spacing: 8px;
+  font-weight: 700;
+  text-shadow: 0 2px 12px rgba(0, 35, 10, 0.5);
 }
 .ifstate {
-  opacity: 0.92;
-  letter-spacing: 0.4px;
+  opacity: 0.95;
+  letter-spacing: 0.6px;
+  color: #f3fff6;
+  text-shadow: 0 1px 6px rgba(0, 35, 10, 0.45);
 }
 
 /* "I am ___" heading — a hair more refined. */
