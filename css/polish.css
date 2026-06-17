@@ -18,9 +18,18 @@ html, body {
   box-shadow: inset 0 0 240px rgba(0, 38, 12, 0.38);
 }
 
-/* Counter: steady, non-jittering digits and a touch more polish. */
+/* Counter: steady digits with a cleaner, softer drop shadow. */
 .moneyclass {
   font-variant-numeric: tabular-nums;
+  text-shadow: 0 3px 14px rgba(0, 35, 10, 0.4);
+}
+/* The dollar sign: deep green with a soft green fade/glow. */
+.dollarSign {
+  color: #196619;
+  text-shadow:
+    0 0 24px rgba(13, 220, 60, 0.85),
+    0 0 9px rgba(20, 255, 0, 0.5),
+    1px 2px 3px rgba(0, 40, 12, 0.4);
 }
 .netWorth {
   letter-spacing: 4px;
@@ -28,6 +37,17 @@ html, body {
 .ifstate {
   opacity: 0.92;
   letter-spacing: 0.4px;
+  font-size: 0.34em;
+}
+
+@media only screen and (max-width: 750px) {
+  /* Tone down the dollar-sign glow on phones (it's too much there). */
+  .dollarSign {
+    text-shadow:
+      0 0 9px rgba(13, 220, 60, 0.55),
+      1px 1px 2px rgba(0, 40, 12, 0.35);
+  }
+  .ifstate { font-size: 0.4em; }
 }
 
 /* "I am ___" heading — a hair more refined. */
@@ -60,8 +80,8 @@ html, body {
 /* Custom SVG arrow (inherits the hint color, identical on every device). */
 .hintArrow {
   display: inline-block;
-  vertical-align: -4px;
-  margin-left: -7px;
+  vertical-align: -2px;
+  margin-left: -3px;
   transform: scaleX(-1);
 }
 .hintArrow svg { display: block; }
@@ -113,8 +133,8 @@ html, body {
 }
 @media only screen and (max-width: 750px) {
   /* Bigger tap target, label tucked right beneath it. */
-  .topRight { width: 30px; top: 14px; right: 12px; }
-  .resetHint { top: 48px; right: 9px; font-size: 10px; letter-spacing: 0.5px; }
+  .topRight { width: 26px; top: 14px; right: 12px; }
+  .resetHint { top: 43px; right: 9px; font-size: 10px; letter-spacing: 0.5px; }
 }
 
 /* ---- Money rain: real bills, 3D tumble, parallax depth ---- */

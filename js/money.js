@@ -47,13 +47,12 @@ if(newAmount < 99.99)
   // Create a span for the dollar sign
   var dollarSpan = document.createElement("span");
   dollarSpan.textContent = "$";
-  dollarSpan.style.color = "#196619";
+  dollarSpan.className = "dollarSign"; // color + fade live in css/polish.css
   dollarSpan.style.marginRight = "11px"; // Add some spacing
   dollarSpan.style.fontSize = ".7em";
  dollarSpan.style.transform = "translateY(-10%)"; // Move up by 50% of its own height
   dollarSpan.style.position = "relative"; // Ensure transform works as intended
-  dollarSpan.style.display = "inline-block"; 
-  dollarSpan.style.textShadow = "-7px 3px 20px #00ff30cf, -4px 3px 1px #20ff00;";
+  dollarSpan.style.display = "inline-block";
   moneyElement.appendChild(dollarSpan);
 
   if(amountLarge)
