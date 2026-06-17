@@ -1,12 +1,14 @@
 speed = 10;
 
 // Per-second figures, updated June 16, 2026.
-// Each person's YTD net-worth change is treated as an annual rate and
-// divided by 31,536,000 seconds/year. Income tiers use annual income.
-// See README.md for sources and exact yearly figures.
-bezosIncrease = 443.94;
-muskIncrease = 20738.46;
-zuckIncrease = 684.93;
+// Billionaires: total net worth (Bloomberg Billionaires Index) divided by
+// their working life in seconds — i.e. (age - 18) * 31,536,000. This is a
+// lifetime-average accrual rate, so it's immune to one-off events like an
+// IPO. Income tiers: annual income / 31,536,000.
+// See README.md for the exact figures and sources.
+bezosIncrease = 192.42;   // $267B / (44 working yrs)
+muskIncrease = 1118.65;   // $1.27T / (36 working yrs)
+zuckIncrease = 302.56;    // $229B / (24 working yrs)
 toppointIncrease = 0.10504480;
 toponeIncrease = 0.02536783;
 avgAmericanIncrease = 0.00211257;
