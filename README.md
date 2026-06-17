@@ -11,10 +11,10 @@ that gap impossible to ignore by letting you stand in anyone's shoes and feel th
 ## How the numbers work
 
 For billionaires, the counter uses their **total net worth divided by their working life**,
-counting every year since they turned 18. That gives a lifetime-average rate of wealth accumulation,
-which deliberately sidesteps the trap of one-off events: a single IPO or stock swing can move
-a fortune by hundreds of billions in a day, so treating any one year as "income" would be
-wildly misleading. Spreading the whole fortune across a whole career is the honest floor.
+counting every year since they turned 18. It answers a simple question: across an entire
+career, how many dollars has this fortune piled up per second? Using a lifetime average keeps
+the number steady and conservative, so it reflects how someone actually got rich rather than
+any single lucky year.
 
 For everyday earners, the counter uses **annual income**, because a typical worker holds
 little appreciating wealth, so their paycheck *is* their accrual rate. Both sides measure
@@ -41,9 +41,8 @@ counted in seconds as `(age - 18) x 31,536,000`; income per second is `annual in
 \* Full-time at the federal minimum wage of $7.25/hr, unchanged since 2009.
 
 Even on this conservative, lifetime-average basis, Musk accrues roughly **530,000x** faster
-than the average American worker. Musk's figure uses his full post-SpaceX-IPO net worth, but
-because it's spread across his entire working life, that one-time jump doesn't distort the
-rate. All values live in [`js/money.js`](js/money.js) if you'd like to tweak them.
+than the average American worker. All values live in [`js/money.js`](js/money.js) if you'd
+like to tweak them.
 
 ## Sources
 
